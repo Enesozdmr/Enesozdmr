@@ -56,6 +56,7 @@ altyapısını geliştiriyorum (Fastify, Next.js, PostgreSQL, Docker).
 
 | Proje | Ne yapıyor | Teknoloji |
 |---|---|---|
+| **Fasppegent** | iPhone'dan yönettiğim kişisel asistan: ajanlara iş verip düşünme adımlarını ve araç çağrılarını canlı izleme, riskli adımlarda onay akışı, not yakalama, hatırlatıcı ve push bildirim | Rust (axum, sqlx), PostgreSQL, Expo |
 | **Yerel yapay zekâ platformu** | Kendi sunucumda yerel LLM'ler, RAG araması ve araç çağıran ajanlar; dışarıya veri göndermeyen, politika ve onay akışıyla sınırlandırılmış altyapı | Ollama, pgvector, Docker |
 | **İkinci beyin** | Link ya da metni alıp konuşmayı yazıya, içeriği Türkçe özete çeviren ve anlamsal aramaya açan kişisel bilgi hattı | faster-whisper, yerel LLM |
 | **TABAK** | Diyetisyenler için platform; tek kod tabanından web ve mobil, 1.299 otomatik test | FastAPI, PostgreSQL, Expo |
