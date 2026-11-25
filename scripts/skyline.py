@@ -144,7 +144,7 @@ def uret(haftalar):
         for i, f in enumerate(["#161b22"] + [hex_(renk(t)) for t in (0.15, 0.45, 0.75, 1.0)])
     )
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{toplam} katkı (GitHub son 12 ay ve GitLab 2023–26 toplamı, GitLab toplamı etkinlik günlerine oranlı dağıtıldı); en yoğun gün {zirve}, {en_cok} katkı. Her bina bir günü, yüksekliği o günkü katkı sayısını gösterir.">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{toplam} katkı (GitHub ve GitLab); en yoğun gün {zirve}, {en_cok} katkı. Her bina bir günü, yüksekliği o günkü katkı sayısını gösterir.">
 <title>{toplam} katkı</title>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1022"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
@@ -165,7 +165,7 @@ def uret(haftalar):
 <text x="1136" y="70" font-family="{MONO}" font-size="14" letter-spacing="2" fill="#7ee787">TOPLAM</text>
 <text x="1136" y="140" font-family="{SANS}" font-size="72" font-weight="800" letter-spacing="-2" fill="url(#sayi)">{toplam_s}</text>
 <text x="1136" y="170" font-family="{MONO}" font-size="16" fill="#c9d1d9">katkı</text>
-<text x="1136" y="192" font-family="{MONO}" font-size="12" fill="#6e7681">GitHub son 12 ay · GitLab 2023–26 toplamı</text>
+<text x="1136" y="192" font-family="{MONO}" font-size="12" fill="#6e7681">GitHub + GitLab</text>
 </g>
 <g font-family="{MONO}" font-size="14" fill="#8b949e">
 <text x="64" y="452">en yoğun gün <tspan fill="#f0f6fc" font-weight="700">{zirve}</tspan> · {en_cok} katkı</text>
