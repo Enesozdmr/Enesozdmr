@@ -54,6 +54,11 @@ altyapısını geliştiriyorum (Fastify, Next.js, PostgreSQL, Docker).
 
 ## Kişisel projeler
 
+<img src="./assets/projeler.svg" width="100%" alt="Kişisel projeler: Fasppegent, yerel yapay zekâ platformu, ikinci beyin, TABAK, filo takip ve telemetri, DOKUM, D&amp;D Companion, programatik video hattı">
+
+<details>
+<summary>Metin olarak</summary>
+
 | Proje | Ne yapıyor | Teknoloji |
 |---|---|---|
 | **Fasppegent** | iPhone'dan yönettiğim kişisel asistan: ajanlara iş verip düşünme adımlarını ve araç çağrılarını canlı izleme, riskli adımlarda onay akışı, not yakalama, hatırlatıcı ve push bildirim | Rust (axum, sqlx), PostgreSQL, Expo |
@@ -64,6 +69,8 @@ altyapısını geliştiriyorum (Fastify, Next.js, PostgreSQL, Docker).
 | **DOKUM** | e-Fatura PDF/XML dosyalarını Excel'e çevirir; okunan her değeri belge metnine karşı doğrular | Python |
 | **D&D Companion** | Birim testli kural motoru, karakter sihirbazı ve 3D zar | Next.js, Supabase |
 | **Programatik video hattı** | Ham çekimlerden otomatik vlog kurgusu | Remotion, ffmpeg |
+
+</details>
 
 Depolarımın çoğu gizli; merak ettiğin bir proje olursa yazabilirsin.
 
@@ -81,4 +88,4 @@ Depolarımın çoğu gizli; merak ettiğin bir proje olursa yazabilirsin.
 
 [LinkedIn](https://www.linkedin.com/in/muhammed-%C3%B6zdemir-891967194)
 
-<sub>Bu sayfadaki görseller bu depodaki SVG dosyalarıdır; katkı şehri her gün <a href="./scripts/skyline.py">kendi betiğimle</a> yeniden üretilir.</sub>
+<sub>Bu sayfadaki görseller bu depodaki SVG dosyalarıdır; katkı şehri her gün <a href="./scripts/skyline.py">kendi betiğimle</a> yeniden üretilir, proje kartları ve üst görsel <a href="./scripts/projeler.py">projeler.py</a> ve <a href="./scripts/hero.py">hero.py</a> ile. Logolar: simple-icons (CC0).</sub>
