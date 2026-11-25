@@ -20,10 +20,6 @@ altyapısını geliştiriyorum (Fastify, Next.js, PostgreSQL, Docker).
 
 <img src="./assets/skyline.svg?v=4" width="100%" alt="Katkılar: her bina bir gün, yüksekliği o günkü katkı sayısı">
 
-## Yol
-
-<img src="./assets/timeline.svg" width="100%" alt="Kariyer çizelgesi: 2022 stajlar, 2023 backend mühendisliği, 2024 veri merkezi operasyonu, 2026 Pandassist">
-
 ## Neler yaptım
 
 - **Telemedicine API'si:** doktor, hemşire ve hasta uygulamalarına hizmet
