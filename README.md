@@ -18,7 +18,7 @@ kendim kurup işletiyorum.
 CRM operasyonlarını yürüten çok kiracılı B2B platformun backend'ini ve
 altyapısını geliştiriyorum (Fastify, Next.js, PostgreSQL, Docker).
 
-<img src="./assets/skyline.svg" width="100%" alt="Katkılar: her bina bir gün, yüksekliği o günkü katkı sayısı">
+<img src="./assets/skyline.svg?v=3" width="100%" alt="Katkılar: her bina bir gün, yüksekliği o günkü katkı sayısı">
 
 ## Yol
 
