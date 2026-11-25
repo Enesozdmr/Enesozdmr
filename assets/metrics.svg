@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 190" width="1200" height="190" role="img" aria-label="Öne çıkan sonuçlar: 430'dan fazla REST endpoint'lik telemedicine API'si; kritik sorguda 375 kat hızlanma, 1,5 saniyeden 4 milisaniyeye; her değişiklikte çalışan 5.000'den fazla otomatik test; 7 dile kadar yerelleştirilmiş 6 production sitesi.">
+  <title>Öne çıkan sonuçlar</title>
+  <defs>
+    <linearGradient id="kart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1730"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="s1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#79c0ff"/><stop offset="1" stop-color="#58a6ff"/></linearGradient>
+    <linearGradient id="s2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7ee787"/><stop offset="1" stop-color="#39d3bb"/></linearGradient>
+    <linearGradient id="s3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e3b341"/><stop offset="1" stop-color="#ffa657"/></linearGradient>
+    <linearGradient id="s4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d2a8ff"/><stop offset="1" stop-color="#a371f7"/></linearGradient>
+  </defs>
+
+  <g font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+    <!-- 1 -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.2s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="0 18" to="0 0" dur="0.7s" begin="0.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 0.84 0.3 1"/>
+      <rect x="1" y="1" width="282" height="188" rx="16" fill="url(#kart)" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="28" y="78" font-size="50" font-weight="800" letter-spacing="-1.5" fill="url(#s1)">430+</text>
+      <text x="28" y="112" font-size="17" font-weight="600" fill="#f0f6fc">REST endpoint</text>
+      <text x="28" y="136" font-size="13.5" fill="#8b949e">telemedicine API'si, 65+ modül</text>
+      <rect x="28" y="158" width="226" height="4" rx="2" fill="#ffffff" fill-opacity="0.07"/>
+      <rect x="28" y="158" width="0" height="4" rx="2" fill="url(#s1)"><animate attributeName="width" from="0" to="226" dur="1.4s" begin="0.5s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+    </g>
+    <!-- 2 -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.4s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="0 18" to="0 0" dur="0.7s" begin="0.4s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 0.84 0.3 1"/>
+      <rect x="306" y="1" width="282" height="188" rx="16" fill="url(#kart)" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="333" y="78" font-size="50" font-weight="800" letter-spacing="-1.5" fill="url(#s2)">375×</text>
+      <text x="333" y="112" font-size="17" font-weight="600" fill="#f0f6fc">daha hızlı sorgu</text>
+      <text x="333" y="136" font-size="13.5" fill="#8b949e">1,5 sn → 4 ms, indeks optimizasyonu</text>
+      <rect x="333" y="158" width="226" height="4" rx="2" fill="#ffffff" fill-opacity="0.07"/>
+      <rect x="333" y="158" width="0" height="4" rx="2" fill="url(#s2)"><animate attributeName="width" from="0" to="226" dur="1.4s" begin="0.7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+    </g>
+    <!-- 3 -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.6s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="0 18" to="0 0" dur="0.7s" begin="0.6s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 0.84 0.3 1"/>
+      <rect x="611" y="1" width="282" height="188" rx="16" fill="url(#kart)" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="638" y="78" font-size="50" font-weight="800" letter-spacing="-1.5" fill="url(#s3)">5.000+</text>
+      <text x="638" y="112" font-size="17" font-weight="600" fill="#f0f6fc">otomatik test</text>
+      <text x="638" y="136" font-size="13.5" fill="#8b949e">her değişiklikte CI'da çalışıyor</text>
+      <rect x="638" y="158" width="226" height="4" rx="2" fill="#ffffff" fill-opacity="0.07"/>
+      <rect x="638" y="158" width="0" height="4" rx="2" fill="url(#s3)"><animate attributeName="width" from="0" to="226" dur="1.4s" begin="0.9s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+    </g>
+    <!-- 4 -->
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.8s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="0 18" to="0 0" dur="0.7s" begin="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.16 0.84 0.3 1"/>
+      <rect x="917" y="1" width="282" height="188" rx="16" fill="url(#kart)" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="944" y="78" font-size="50" font-weight="800" letter-spacing="-1.5" fill="url(#s4)">7 dil</text>
+      <text x="944" y="112" font-size="17" font-weight="600" fill="#f0f6fc">6 production sitesi</text>
+      <text x="944" y="136" font-size="13.5" fill="#8b949e">yerelleştirme ve teknik SEO</text>
+      <rect x="944" y="158" width="226" height="4" rx="2" fill="#ffffff" fill-opacity="0.07"/>
+      <rect x="944" y="158" width="0" height="4" rx="2" fill="url(#s4)"><animate attributeName="width" from="0" to="226" dur="1.4s" begin="1.1s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>
+    </g>
+  </g>
+</svg>

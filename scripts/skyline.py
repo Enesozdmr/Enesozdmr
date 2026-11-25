@@ -76,8 +76,6 @@ def uret(haftalar):
     toplam = sum(sayilar)
     toplam_s = f"{toplam:,}".replace(",", ".")
     en_cok = max(sayilar) or 1
-    aktif = sum(1 for c in sayilar if c)
-    ortalama = round(toplam / aktif) if aktif else 0
 
     # Baştaki boş haftaları at; kalan dönemi tuvalin genişliğine yay.
     ilk = next((i for i, h in enumerate(haftalar) if any(c for _, c in h)), 0)
@@ -146,8 +144,8 @@ def uret(haftalar):
         for i, f in enumerate(["#161b22"] + [hex_(renk(t)) for t in (0.15, 0.45, 0.75, 1.0)])
     )
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Son 12 ayda {toplam} katkı; en yoğun gün {zirve}, {en_cok} katkı. Her bina bir günü, yüksekliği o günkü katkı sayısını gösterir.">
-<title>Son 12 ayda {toplam} katkı</title>
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{toplam} katkı (GitHub son 12 ay ve GitLab 2023–26 toplamı, GitLab dönemi günlere eşit dağıtıldı); en yoğun gün {zirve}, {en_cok} katkı. Her bina bir günü, yüksekliği o günkü katkı sayısını gösterir.">
+<title>{toplam} katkı</title>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1022"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
 <radialGradient id="isik" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#3b82f6" stop-opacity="0.26"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
@@ -164,14 +162,13 @@ def uret(haftalar):
 {"".join(govde)}
 <g font-family="{MONO}" font-size="12" fill="#6e7681" text-anchor="middle">{"".join(etiketler)}</g>
 <g text-anchor="end">
-<text x="1136" y="70" font-family="{MONO}" font-size="14" letter-spacing="2" fill="#7ee787">SON 12 AY</text>
+<text x="1136" y="70" font-family="{MONO}" font-size="14" letter-spacing="2" fill="#7ee787">TOPLAM</text>
 <text x="1136" y="140" font-family="{SANS}" font-size="72" font-weight="800" letter-spacing="-2" fill="url(#sayi)">{toplam_s}</text>
 <text x="1136" y="170" font-family="{MONO}" font-size="16" fill="#c9d1d9">katkı</text>
-<text x="1136" y="192" font-family="{MONO}" font-size="12" fill="#6e7681">GitHub + GitLab</text>
+<text x="1136" y="192" font-family="{MONO}" font-size="12" fill="#6e7681">GitHub son 12 ay · GitLab 2023–26, eşit dağıtıldı</text>
 </g>
 <g font-family="{MONO}" font-size="14" fill="#8b949e">
-<text x="64" y="430">en yoğun gün <tspan fill="#f0f6fc" font-weight="700">{zirve}</tspan> · {en_cok} katkı</text>
-<text x="64" y="452">çalışılan günlerde ortalama <tspan fill="#f0f6fc" font-weight="700">{ortalama}</tspan> katkı</text>
+<text x="64" y="452">en yoğun gün <tspan fill="#f0f6fc" font-weight="700">{zirve}</tspan> · {en_cok} katkı</text>
 <text x="64" y="474" font-size="12">az</text>{lejant}<text x="204" y="474" font-size="12">çok</text>
 </g>
 </svg>

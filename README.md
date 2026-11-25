@@ -10,7 +10,7 @@ Yazılımın yanında veri merkezi ve sistem/ağ operasyonu geçmişim var;
 geliştirdiğim sistemlerin barındırma, ağ, yedekleme ve izleme tarafını da
 kendim kurup işletiyorum.
 
-<img src="./assets/skyline.svg" width="100%" alt="Son 12 ayın katkıları: her bina bir gün, yüksekliği o günkü katkı sayısı">
+<img src="./assets/metrics.svg" width="100%" alt="Öne çıkan sonuçlar: 430+ REST endpoint, 375 kat hızlanan sorgu, 5.000+ otomatik test, 7 dilde 6 production sitesi">
 
 ## Şu an
 
@@ -18,7 +18,13 @@ kendim kurup işletiyorum.
 CRM operasyonlarını yürüten çok kiracılı B2B platformun backend'ini ve
 altyapısını geliştiriyorum (Fastify, Next.js, PostgreSQL, Docker).
 
-## Daha önce
+<img src="./assets/skyline.svg" width="100%" alt="Katkılar: her bina bir gün, yüksekliği o günkü katkı sayısı">
+
+## Yol
+
+<img src="./assets/timeline.svg" width="100%" alt="Kariyer çizelgesi: 2022 stajlar, 2023 backend mühendisliği, 2024 veri merkezi operasyonu, 2026 Pandassist">
+
+## Neler yaptım
 
 - **Telemedicine API'si:** doktor, hemşire ve hasta uygulamalarına hizmet
   veren 430+ endpoint'lik backend; ödeme, randevu, uzaktan hasta izleme.
@@ -34,21 +40,15 @@ altyapısını geliştiriyorum (Fastify, Next.js, PostgreSQL, Docker).
 
 ## Kişisel projeler
 
-- **Yerel yapay zekâ platformu:** kendi sunucumda Ollama ile yerel LLM'ler,
-  pgvector üzerinde RAG ve araç çağıran ajanlar; dışarıya veri göndermeyen,
-  politika ve onay akışıyla sınırlandırılmış bir altyapı.
-- **İkinci beyin:** link ya da metni alıp konuşmayı yazıya, içeriği Türkçe
-  özete çeviren ve anlamsal aramaya açan kişisel bilgi hattı.
-- **TABAK:** diyetisyenler için platform. FastAPI + PostgreSQL, Expo ile
-  tek kod tabanından web ve mobil; 1.299 otomatik test.
-- **Filo takip ve telemetri:** TypeScript API, TimescaleDB ve Redis;
-  konum akışından sefer üretimi ve yakıt anomalisi tespiti.
-- **DOKUM:** e-Fatura PDF/XML dosyalarını Excel'e çeviren servis; okunan
-  her değeri belge metnine karşı doğrular.
-- **D&D Companion:** birim testli kural motoru, karakter sihirbazı ve 3D
-  zar içeren Next.js + Supabase uygulaması.
-- **Programatik video hattı:** ham çekimlerden otomatik vlog kurgulayan
-  Remotion + ffmpeg pipeline'ı.
+| Proje | Ne yapıyor | Teknoloji |
+|---|---|---|
+| **Yerel yapay zekâ platformu** | Kendi sunucumda yerel LLM'ler, RAG araması ve araç çağıran ajanlar; dışarıya veri göndermeyen, politika ve onay akışıyla sınırlandırılmış altyapı | Ollama, pgvector, Docker |
+| **İkinci beyin** | Link ya da metni alıp konuşmayı yazıya, içeriği Türkçe özete çeviren ve anlamsal aramaya açan kişisel bilgi hattı | faster-whisper, yerel LLM |
+| **TABAK** | Diyetisyenler için platform; tek kod tabanından web ve mobil, 1.299 otomatik test | FastAPI, PostgreSQL, Expo |
+| **Filo takip ve telemetri** | Konum akışından sefer üretimi ve yakıt anomalisi tespiti | TypeScript, TimescaleDB, Redis |
+| **DOKUM** | e-Fatura PDF/XML dosyalarını Excel'e çevirir; okunan her değeri belge metnine karşı doğrular | Python |
+| **D&D Companion** | Birim testli kural motoru, karakter sihirbazı ve 3D zar | Next.js, Supabase |
+| **Programatik video hattı** | Ham çekimlerden otomatik vlog kurgusu | Remotion, ffmpeg |
 
 Depolarımın çoğu gizli; merak ettiğin bir proje olursa yazabilirsin.
 
@@ -65,3 +65,5 @@ Depolarımın çoğu gizli; merak ettiğin bir proje olursa yazabilirsin.
 ## İletişim
 
 [LinkedIn](https://www.linkedin.com/in/muhammed-%C3%B6zdemir-891967194)
+
+<sub>Bu sayfadaki görseller bu depodaki SVG dosyalarıdır; katkı şehri her gün <a href="./scripts/skyline.py">kendi betiğimle</a> yeniden üretilir.</sub>
