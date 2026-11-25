@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Muhammed Özdemir — Backend &amp; Platform Engineer. İstemciden API'ye, oradan PostgreSQL, kuyruk ve LLM servislerine akan isteklerin canlandırması.">
+  <title>Muhammed Özdemir — Backend &amp; Platform Engineer</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1022"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <radialGradient id="blob" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a371f7" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="name" gradientUnits="userSpaceOnUse" x1="64" y1="0" x2="664" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#f0f6fc"/>
+      <stop offset="0.45" stop-color="#79c0ff"/>
+      <stop offset="0.75" stop-color="#d2a8ff"/>
+      <stop offset="1" stop-color="#f0f6fc"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="1200 0" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.055"/>
+    </pattern>
+    <filter id="glow" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="440" rx="18"/></clipPath>
+    <clipPath id="type">
+      <rect x="64" y="176" height="34" width="0">
+        <animate attributeName="width" dur="2.4s" begin="0.7s" fill="freeze" calcMode="discrete"
+          values="0;13.2;26.4;39.6;52.8;66;79.2;92.4;105.6;118.8;132;145.2;158.4;171.6;184.8;198;211.2;224.4;237.6;250.8;264;277.2;290.4;303.6;316.8;330;343.2;357"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="440" fill="url(#bg)"/>
+    <circle cx="900" cy="210" r="330" fill="url(#blob)">
+      <animate attributeName="cx" values="880;960;880" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="200;250;200" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="240" cy="420" r="300" fill="url(#blob2)">
+      <animate attributeName="cx" values="220;330;220" dur="17s" repeatCount="indefinite"/>
+    </circle>
+    <rect width="1200" height="440" fill="url(#dots)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="439" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.09"/>
+
+  <!-- Sol: kimlik -->
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace">
+    <text x="64" y="92" font-size="17" fill="#7ee787">$ whoami</text>
+  </g>
+  <text x="64" y="156" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="-1" fill="url(#name)">Muhammed Özdemir</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace">
+    <text x="64" y="200" font-size="22" fill="#c9d1d9" textLength="356.4" lengthAdjust="spacingAndGlyphs" clip-path="url(#type)">Backend &amp; Platform Engineer</text>
+    <rect x="64" y="180" width="11" height="25" fill="#79c0ff">
+      <animate attributeName="x" dur="2.4s" begin="0.7s" fill="freeze" calcMode="discrete"
+        values="66;79.2;92.4;105.6;118.8;132;145.2;158.4;171.6;184.8;198;211.2;224.4;237.6;250.8;264;277.2;290.4;303.6;316.8;330;343.2;356.4;369.6;382.8;396;409.2;424"/>
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="64" y="252" font-size="15" fill="#8b949e" opacity="0">Node.js/TypeScript · Python · PostgreSQL · Docker · Linux
+      <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="3.3s" fill="freeze"/>
+    </text>
+
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="3.9s" fill="freeze"/>
+      <circle cx="70" cy="331" r="5" fill="#3fb950"/>
+      <circle cx="70" cy="331" r="5" fill="none" stroke="#3fb950" stroke-width="2">
+        <animate attributeName="r" values="5;15" dur="2.2s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.7;0" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="88" y="336" font-size="15" fill="#8b949e">Ankara, Türkiye</text>
+    </g>
+  </g>
+
+  <!-- Sağ: istek akışı -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5">
+    <path d="M776 220 H828"/>
+    <path d="M956 220 C 990 220, 986 112, 1020 112"/>
+    <path d="M956 220 H1020"/>
+    <path d="M956 220 C 990 220, 986 328, 1020 328"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" text-anchor="middle">
+    <!-- İstemci -->
+    <rect x="648" y="197" width="128" height="46" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <text x="712" y="225" fill="#c9d1d9">İstemci</text>
+
+    <!-- API -->
+    <rect x="828" y="197" width="128" height="46" rx="11" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+    <rect x="828" y="197" width="128" height="46" rx="11" fill="#58a6ff" opacity="0">
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite"
+        values="0;0;0.28;0;0;0.28;0;0;0.28;0;0" keyTimes="0;0.11;0.125;0.2;0.44;0.455;0.53;0.77;0.785;0.86;1"/>
+    </rect>
+    <text x="892" y="225" fill="#f0f6fc" font-weight="700">API</text>
+
+    <!-- PostgreSQL -->
+    <rect x="1020" y="89" width="128" height="46" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <rect x="1020" y="89" width="128" height="46" rx="11" fill="#79c0ff" opacity="0">
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;0.32;0;0" keyTimes="0;0.27;0.29;0.4;1"/>
+    </rect>
+    <text x="1084" y="117" fill="#c9d1d9">PostgreSQL</text>
+
+    <!-- Kuyruk -->
+    <rect x="1020" y="197" width="128" height="46" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <rect x="1020" y="197" width="128" height="46" rx="11" fill="#e3b341" opacity="0">
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;0.32;0;0" keyTimes="0;0.6;0.62;0.73;1"/>
+    </rect>
+    <text x="1084" y="225" fill="#c9d1d9">Kuyruk</text>
+
+    <!-- LLM -->
+    <rect x="1020" y="305" width="128" height="46" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <rect x="1020" y="305" width="128" height="46" rx="11" fill="#d2a8ff" opacity="0">
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;0.32;0;0;0" keyTimes="0;0.93;0.95;0.995;0.999;1"/>
+    </rect>
+    <text x="1084" y="333" fill="#c9d1d9">LLM · RAG</text>
+  </g>
+
+  <!-- Paketler: 6 sn'lik döngü -->
+  <g filter="url(#glow)">
+    <!-- 1: istemci → API → PostgreSQL -->
+    <circle r="4.5" fill="#79c0ff" opacity="0">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M776 220 H828" keyPoints="0;0;1;1" keyTimes="0;0.01;0.11;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.01;0.02;0.1;0.11;1"/>
+    </circle>
+    <circle r="4.5" fill="#79c0ff" opacity="0">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M956 220 C 990 220, 986 112, 1020 112" keyPoints="0;0;1;1" keyTimes="0;0.13;0.27;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.13;0.14;0.26;0.27;1"/>
+    </circle>
+    <!-- 2: istemci → API → Kuyruk -->
+    <circle r="4.5" fill="#e3b341" opacity="0">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M776 220 H828" keyPoints="0;0;1;1" keyTimes="0;0.34;0.44;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.34;0.35;0.43;0.44;1"/>
+    </circle>
+    <circle r="4.5" fill="#e3b341" opacity="0">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M956 220 H1020" keyPoints="0;0;1;1" keyTimes="0;0.46;0.6;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.46;0.47;0.59;0.6;1"/>
+    </circle>
+    <!-- 3: istemci → API → LLM -->
+    <circle r="4.5" fill="#d2a8ff" opacity="0">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M776 220 H828" keyPoints="0;0;1;1" keyTimes="0;0.67;0.77;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.67;0.68;0.76;0.77;1"/>
+    </circle>
+    <circle r="4.5" fill="#d2a8ff" opacity="0">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M956 220 C 990 220, 986 328, 1020 328" keyPoints="0;0;1;1" keyTimes="0;0.79;0.93;1" calcMode="linear"/>
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.79;0.8;0.92;0.93;1"/>
+    </circle>
+  </g>
+</svg>
