@@ -1,24 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Muhammed Özdemir — Backend &amp; Platform Engineer. İstemciden API'ye, oradan PostgreSQL, kuyruk ve LLM servislerine akan isteklerin canlandırması.">
-  <title>Muhammed Özdemir — Backend &amp; Platform Engineer</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Muhammed Özdemir — Backend, platform, yapay zekâ ve ağ. Fiziksel katmandan uygulama katmanına OSI yığınının yedi katmanında yaptığı işler; bir paket katmanlardan inip geri çıkıyor.">
+  <title>Muhammed Özdemir — L1'den L7'ye</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1022"/>
-      <stop offset="1" stop-color="#0d1117"/>
+      <stop offset="0" stop-color="#0b1022"/><stop offset="1" stop-color="#0d1117"/>
     </linearGradient>
     <radialGradient id="blob" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.30"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="blob2" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#a371f7" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#a371f7" stop-opacity="0"/>
+      <stop offset="0" stop-color="#a371f7" stop-opacity="0.22"/><stop offset="1" stop-color="#a371f7" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="name" gradientUnits="userSpaceOnUse" x1="64" y1="0" x2="664" y2="0" spreadMethod="reflect">
-      <stop offset="0" stop-color="#f0f6fc"/>
-      <stop offset="0.45" stop-color="#79c0ff"/>
-      <stop offset="0.75" stop-color="#d2a8ff"/>
-      <stop offset="1" stop-color="#f0f6fc"/>
+      <stop offset="0" stop-color="#f0f6fc"/><stop offset="0.45" stop-color="#79c0ff"/>
+      <stop offset="0.75" stop-color="#d2a8ff"/><stop offset="1" stop-color="#f0f6fc"/>
       <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="1200 0" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d2a8ff"/><stop offset="0.5" stop-color="#79c0ff"/><stop offset="1" stop-color="#7ee787"/>
     </linearGradient>
     <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.055"/>
@@ -27,128 +25,147 @@
       <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="frame"><rect width="1200" height="440" rx="18"/></clipPath>
-    <clipPath id="type">
-      <rect x="64" y="176" height="34" width="0">
-        <animate attributeName="width" dur="2.4s" begin="0.7s" fill="freeze" calcMode="discrete"
-          values="0;13.2;26.4;39.6;52.8;66;79.2;92.4;105.6;118.8;132;145.2;158.4;171.6;184.8;198;211.2;224.4;237.6;250.8;264;277.2;290.4;303.6;316.8;330;343.2;357"/>
-      </rect>
-    </clipPath>
+    <clipPath id="frame"><rect width="1200" height="500" rx="18"/></clipPath>
   </defs>
-
   <g clip-path="url(#frame)">
-    <rect width="1200" height="440" fill="url(#bg)"/>
-    <circle cx="900" cy="210" r="330" fill="url(#blob)">
-      <animate attributeName="cx" values="880;960;880" dur="14s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="200;250;200" dur="11s" repeatCount="indefinite"/>
+    <rect width="1200" height="500" fill="url(#bg)"/>
+    <circle cx="900" cy="250" r="340" fill="url(#blob)">
+      <animate attributeName="cy" values="230;290;230" dur="13s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="240" cy="420" r="300" fill="url(#blob2)">
-      <animate attributeName="cx" values="220;330;220" dur="17s" repeatCount="indefinite"/>
+    <circle cx="220" cy="470" r="300" fill="url(#blob2)">
+      <animate attributeName="cx" values="200;320;200" dur="17s" repeatCount="indefinite"/>
     </circle>
-    <rect width="1200" height="440" fill="url(#dots)"/>
+    <rect width="1200" height="500" fill="url(#dots)"/>
   </g>
-  <rect x="0.5" y="0.5" width="1199" height="439" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.09"/>
-
-  <!-- Sol: kimlik -->
+  <rect x="0.5" y="0.5" width="1199" height="499" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.09"/>
   <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace">
-    <text x="64" y="92" font-size="17" fill="#7ee787">$ whoami</text>
+    <text x="64" y="104" font-size="17" fill="#3fb950">$ whoami</text>
   </g>
-  <text x="64" y="156" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="-1" fill="url(#name)">Muhammed Özdemir</text>
-
+  <text x="62" y="170" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-1" fill="url(#name)">Muhammed Özdemir</text>
   <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace">
-    <text x="64" y="200" font-size="22" fill="#c9d1d9" textLength="356.4" lengthAdjust="spacingAndGlyphs" clip-path="url(#type)">Backend &amp; Platform Engineer</text>
-    <rect x="64" y="180" width="11" height="25" fill="#79c0ff">
-      <animate attributeName="x" dur="2.4s" begin="0.7s" fill="freeze" calcMode="discrete"
-        values="66;79.2;92.4;105.6;118.8;132;145.2;158.4;171.6;184.8;198;211.2;224.4;237.6;250.8;264;277.2;290.4;303.6;316.8;330;343.2;356.4;369.6;382.8;396;409.2;424"/>
-      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
-    </rect>
-
-    <text x="64" y="252" font-size="15" fill="#8b949e" opacity="0">Node.js/TypeScript · Python · PostgreSQL · Docker · Linux
-      <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="3.3s" fill="freeze"/>
-    </text>
-
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="3.9s" fill="freeze"/>
-      <circle cx="70" cy="331" r="5" fill="#3fb950"/>
-      <circle cx="70" cy="331" r="5" fill="none" stroke="#3fb950" stroke-width="2">
-        <animate attributeName="r" values="5;15" dur="2.2s" repeatCount="indefinite"/>
-        <animate attributeName="stroke-opacity" values="0.7;0" dur="2.2s" repeatCount="indefinite"/>
-      </circle>
-      <text x="88" y="336" font-size="15" fill="#8b949e">Ankara, Türkiye</text>
-    </g>
+    <text x="64" y="214" font-size="20" fill="#e6edf3">Backend · Platform · AI · Network</text>
+    <text x="64" y="252" font-size="15" fill="#8b949e">Rack kurulumundan RAG'e,</text>
+    <text x="64" y="274" font-size="15" fill="#8b949e">OSI'nin her katmanında iş çıkardım.</text>
   </g>
-
-  <!-- Sağ: istek akışı -->
-  <g fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5">
-    <path d="M776 220 H828"/>
-    <path d="M956 220 C 990 220, 986 112, 1020 112"/>
-    <path d="M956 220 H1020"/>
-    <path d="M956 220 C 990 220, 986 328, 1020 328"/>
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace">
+    <text x="64" y="320" font-size="12" fill="#6e7681" letter-spacing="1.5">DİLLER</text>
+    <rect x="64" y="330" width="101" height="26" rx="13" fill="#79c0ff" fill-opacity="0.10" stroke="#79c0ff" stroke-opacity="0.45"/>
+    <text x="114.5" y="347.5" text-anchor="middle" font-size="13" fill="#e6edf3">TypeScript</text>
+    <rect x="173.0" y="330" width="69" height="26" rx="13" fill="#79c0ff" fill-opacity="0.10" stroke="#79c0ff" stroke-opacity="0.45"/>
+    <text x="207.7" y="347.5" text-anchor="middle" font-size="13" fill="#e6edf3">Python</text>
+    <rect x="250.4" y="330" width="38" height="26" rx="13" fill="#79c0ff" fill-opacity="0.10" stroke="#79c0ff" stroke-opacity="0.45"/>
+    <text x="269.3" y="347.5" text-anchor="middle" font-size="13" fill="#e6edf3">C#</text>
+    <rect x="296.2" y="330" width="46" height="26" rx="13" fill="#79c0ff" fill-opacity="0.10" stroke="#79c0ff" stroke-opacity="0.45"/>
+    <text x="319.1" y="347.5" text-anchor="middle" font-size="13" fill="#e6edf3">SQL</text>
+    <rect x="349.9" y="330" width="54" height="26" rx="13" fill="#79c0ff" fill-opacity="0.10" stroke="#79c0ff" stroke-opacity="0.45"/>
+    <text x="376.7" y="347.5" text-anchor="middle" font-size="13" fill="#e6edf3">Bash</text>
+    <text x="64" y="388" font-size="12" fill="#6e7681" letter-spacing="1.5">SİSTEMLER</text>
+    <rect x="64" y="398" width="101" height="26" rx="13" fill="#d2a8ff" fill-opacity="0.10" stroke="#d2a8ff" stroke-opacity="0.45"/>
+    <text x="114.5" y="415.5" text-anchor="middle" font-size="13" fill="#e6edf3">PostgreSQL</text>
+    <rect x="173.0" y="398" width="62" height="26" rx="13" fill="#d2a8ff" fill-opacity="0.10" stroke="#d2a8ff" stroke-opacity="0.45"/>
+    <text x="203.8" y="415.5" text-anchor="middle" font-size="13" fill="#e6edf3">Redis</text>
+    <rect x="242.5" y="398" width="69" height="26" rx="13" fill="#d2a8ff" fill-opacity="0.10" stroke="#d2a8ff" stroke-opacity="0.45"/>
+    <text x="277.2" y="415.5" text-anchor="middle" font-size="13" fill="#e6edf3">Docker</text>
+    <rect x="319.9" y="398" width="62" height="26" rx="13" fill="#d2a8ff" fill-opacity="0.10" stroke="#d2a8ff" stroke-opacity="0.45"/>
+    <text x="350.6" y="415.5" text-anchor="middle" font-size="13" fill="#e6edf3">Linux</text>
+    <rect x="389.4" y="398" width="69" height="26" rx="13" fill="#d2a8ff" fill-opacity="0.10" stroke="#d2a8ff" stroke-opacity="0.45"/>
+    <text x="424.1" y="415.5" text-anchor="middle" font-size="13" fill="#e6edf3">Ollama</text>
   </g>
-
-  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="15" text-anchor="middle">
-    <!-- İstemci -->
-    <rect x="648" y="197" width="128" height="46" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-    <text x="712" y="225" fill="#c9d1d9">İstemci</text>
-
-    <!-- API -->
-    <rect x="828" y="197" width="128" height="46" rx="11" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
-    <rect x="828" y="197" width="128" height="46" rx="11" fill="#58a6ff" opacity="0">
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite"
-        values="0;0;0.28;0;0;0.28;0;0;0.28;0;0" keyTimes="0;0.11;0.125;0.2;0.44;0.455;0.53;0.77;0.785;0.86;1"/>
-    </rect>
-    <text x="892" y="225" fill="#f0f6fc" font-weight="700">API</text>
-
-    <!-- PostgreSQL -->
-    <rect x="1020" y="89" width="128" height="46" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-    <rect x="1020" y="89" width="128" height="46" rx="11" fill="#79c0ff" opacity="0">
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;0.32;0;0" keyTimes="0;0.27;0.29;0.4;1"/>
-    </rect>
-    <text x="1084" y="117" fill="#c9d1d9">PostgreSQL</text>
-
-    <!-- Kuyruk -->
-    <rect x="1020" y="197" width="128" height="46" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-    <rect x="1020" y="197" width="128" height="46" rx="11" fill="#e3b341" opacity="0">
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;0.32;0;0" keyTimes="0;0.6;0.62;0.73;1"/>
-    </rect>
-    <text x="1084" y="225" fill="#c9d1d9">Kuyruk</text>
-
-    <!-- LLM -->
-    <rect x="1020" y="305" width="128" height="46" rx="11" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
-    <rect x="1020" y="305" width="128" height="46" rx="11" fill="#d2a8ff" opacity="0">
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;0.32;0;0;0" keyTimes="0;0.93;0.95;0.995;0.999;1"/>
-    </rect>
-    <text x="1084" y="333" fill="#c9d1d9">LLM · RAG</text>
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#8b949e">
+    <circle cx="70" cy="463" r="5" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="84" y="468">Ankara, Türkiye · NOC'tan production'a</text>
   </g>
-
-  <!-- Paketler: 6 sn'lik döngü -->
+  <line x1="624" y1="69.0" x2="624" y2="417.0" stroke="url(#rail)" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="3 5"/>
+  <g>
+    <line x1="624" y1="69.0" x2="652" y2="69.0" stroke="#d2a8ff" stroke-opacity="0.3"/>
+    <circle cx="624" cy="69.0" r="3.5" fill="#0d1117" stroke="#d2a8ff" stroke-opacity="0.7"/>
+    <rect x="652" y="46" width="496" height="46" rx="10" fill="#161b22" fill-opacity="0.82" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="652" y="46" width="496" height="46" rx="10" fill="#d2a8ff" fill-opacity="0.13" stroke="#d2a8ff" stroke-opacity="0.9" opacity="0">
+      <animate attributeName="opacity" values="0;1;0;0;0;0;0;1" keyTimes="0.0000;0.0000;0.0001;0.0750;0.9650;0.9999;1.0000;1.0000" dur="8.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="652" y="56" width="3" height="26" rx="1.5" fill="#d2a8ff"/>
+    <text x="670" y="75" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" fill="#d2a8ff">L7</text>
+    <text x="702" y="75" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Uygulama</text>
+    <text x="1132" y="75" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#9da7b3">REST · Next.js · RAG · fine-tuning · ajan</text>
+  </g>
+  <g>
+    <line x1="624" y1="127.0" x2="652" y2="127.0" stroke="#bc8cff" stroke-opacity="0.3"/>
+    <circle cx="624" cy="127.0" r="3.5" fill="#0d1117" stroke="#bc8cff" stroke-opacity="0.7"/>
+    <rect x="652" y="104" width="496" height="46" rx="10" fill="#161b22" fill-opacity="0.82" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="652" y="104" width="496" height="46" rx="10" fill="#bc8cff" fill-opacity="0.13" stroke="#bc8cff" stroke-opacity="0.9" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0.0000;0.0483;0.0833;0.1583;0.8817;0.9167;0.9917;1.0000" dur="8.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="652" y="114" width="3" height="26" rx="1.5" fill="#bc8cff"/>
+    <text x="670" y="133" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" fill="#bc8cff">L6</text>
+    <text x="702" y="133" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Sunum</text>
+    <text x="1132" y="133" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#9da7b3">TLS · JSON · UBL-TR · Codec 8</text>
+  </g>
+  <g>
+    <line x1="624" y1="185.0" x2="652" y2="185.0" stroke="#a5b4fc" stroke-opacity="0.3"/>
+    <circle cx="624" cy="185.0" r="3.5" fill="#0d1117" stroke="#a5b4fc" stroke-opacity="0.7"/>
+    <rect x="652" y="162" width="496" height="46" rx="10" fill="#161b22" fill-opacity="0.82" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="652" y="162" width="496" height="46" rx="10" fill="#a5b4fc" fill-opacity="0.13" stroke="#a5b4fc" stroke-opacity="0.9" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0.0000;0.1317;0.1667;0.2417;0.7983;0.8333;0.9083;1.0000" dur="8.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="652" y="172" width="3" height="26" rx="1.5" fill="#a5b4fc"/>
+    <text x="670" y="191" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" fill="#a5b4fc">L5</text>
+    <text x="702" y="191" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Oturum</text>
+    <text x="1132" y="191" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#9da7b3">WebSocket · SSE · JWT · çerez</text>
+  </g>
+  <g>
+    <line x1="624" y1="243.0" x2="652" y2="243.0" stroke="#79c0ff" stroke-opacity="0.3"/>
+    <circle cx="624" cy="243.0" r="3.5" fill="#0d1117" stroke="#79c0ff" stroke-opacity="0.7"/>
+    <rect x="652" y="220" width="496" height="46" rx="10" fill="#161b22" fill-opacity="0.82" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="652" y="220" width="496" height="46" rx="10" fill="#79c0ff" fill-opacity="0.13" stroke="#79c0ff" stroke-opacity="0.9" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0.0000;0.2150;0.2500;0.3250;0.7150;0.7500;0.8250;1.0000" dur="8.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="652" y="230" width="3" height="26" rx="1.5" fill="#79c0ff"/>
+    <text x="670" y="249" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" fill="#79c0ff">L4</text>
+    <text x="702" y="249" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Taşıma</text>
+    <text x="1132" y="249" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#9da7b3">TCP ingest · Nginx · yük dengeleme</text>
+  </g>
+  <g>
+    <line x1="624" y1="301.0" x2="652" y2="301.0" stroke="#56d4dd" stroke-opacity="0.3"/>
+    <circle cx="624" cy="301.0" r="3.5" fill="#0d1117" stroke="#56d4dd" stroke-opacity="0.7"/>
+    <rect x="652" y="278" width="496" height="46" rx="10" fill="#161b22" fill-opacity="0.82" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="652" y="278" width="496" height="46" rx="10" fill="#56d4dd" fill-opacity="0.13" stroke="#56d4dd" stroke-opacity="0.9" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0.0000;0.2983;0.3333;0.4083;0.6317;0.6667;0.7417;1.0000" dur="8.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="652" y="288" width="3" height="26" rx="1.5" fill="#56d4dd"/>
+    <text x="670" y="307" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" fill="#56d4dd">L3</text>
+    <text x="702" y="307" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Ağ</text>
+    <text x="1132" y="307" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#9da7b3">IP · VPN · Tailscale · güvenlik duvarı</text>
+  </g>
+  <g>
+    <line x1="624" y1="359.0" x2="652" y2="359.0" stroke="#4ac26b" stroke-opacity="0.3"/>
+    <circle cx="624" cy="359.0" r="3.5" fill="#0d1117" stroke="#4ac26b" stroke-opacity="0.7"/>
+    <rect x="652" y="336" width="496" height="46" rx="10" fill="#161b22" fill-opacity="0.82" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="652" y="336" width="496" height="46" rx="10" fill="#4ac26b" fill-opacity="0.13" stroke="#4ac26b" stroke-opacity="0.9" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0.0000;0.3817;0.4167;0.4917;0.5483;0.5833;0.6583;1.0000" dur="8.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="652" y="346" width="3" height="26" rx="1.5" fill="#4ac26b"/>
+    <text x="670" y="365" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" fill="#4ac26b">L2</text>
+    <text x="702" y="365" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Veri bağlantısı</text>
+    <text x="1132" y="365" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#9da7b3">switch · VLAN · MAC</text>
+  </g>
+  <g>
+    <line x1="624" y1="417.0" x2="652" y2="417.0" stroke="#7ee787" stroke-opacity="0.3"/>
+    <circle cx="624" cy="417.0" r="3.5" fill="#0d1117" stroke="#7ee787" stroke-opacity="0.7"/>
+    <rect x="652" y="394" width="496" height="46" rx="10" fill="#161b22" fill-opacity="0.82" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="652" y="394" width="496" height="46" rx="10" fill="#7ee787" fill-opacity="0.13" stroke="#7ee787" stroke-opacity="0.9" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0.0000;0.4650;0.5000;0.5750;1.0000" dur="8.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="652" y="404" width="3" height="26" rx="1.5" fill="#7ee787"/>
+    <text x="670" y="423" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" fill="#7ee787">L1</text>
+    <text x="702" y="423" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Fiziksel</text>
+    <text x="1132" y="423" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#9da7b3">rack · kablolama · sunucu kurulumu</text>
+  </g>
   <g filter="url(#glow)">
-    <!-- 1: istemci → API → PostgreSQL -->
-    <circle r="4.5" fill="#79c0ff" opacity="0">
-      <animateMotion dur="6s" repeatCount="indefinite" path="M776 220 H828" keyPoints="0;0;1;1" keyTimes="0;0.01;0.11;1" calcMode="linear"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.01;0.02;0.1;0.11;1"/>
-    </circle>
-    <circle r="4.5" fill="#79c0ff" opacity="0">
-      <animateMotion dur="6s" repeatCount="indefinite" path="M956 220 C 990 220, 986 112, 1020 112" keyPoints="0;0;1;1" keyTimes="0;0.13;0.27;1" calcMode="linear"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.13;0.14;0.26;0.27;1"/>
-    </circle>
-    <!-- 2: istemci → API → Kuyruk -->
-    <circle r="4.5" fill="#e3b341" opacity="0">
-      <animateMotion dur="6s" repeatCount="indefinite" path="M776 220 H828" keyPoints="0;0;1;1" keyTimes="0;0.34;0.44;1" calcMode="linear"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.34;0.35;0.43;0.44;1"/>
-    </circle>
-    <circle r="4.5" fill="#e3b341" opacity="0">
-      <animateMotion dur="6s" repeatCount="indefinite" path="M956 220 H1020" keyPoints="0;0;1;1" keyTimes="0;0.46;0.6;1" calcMode="linear"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.46;0.47;0.59;0.6;1"/>
-    </circle>
-    <!-- 3: istemci → API → LLM -->
-    <circle r="4.5" fill="#d2a8ff" opacity="0">
-      <animateMotion dur="6s" repeatCount="indefinite" path="M776 220 H828" keyPoints="0;0;1;1" keyTimes="0;0.67;0.77;1" calcMode="linear"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.67;0.68;0.76;0.77;1"/>
-    </circle>
-    <circle r="4.5" fill="#d2a8ff" opacity="0">
-      <animateMotion dur="6s" repeatCount="indefinite" path="M956 220 C 990 220, 986 328, 1020 328" keyPoints="0;0;1;1" keyTimes="0;0.79;0.93;1" calcMode="linear"/>
-      <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.79;0.8;0.92;0.93;1"/>
+    <circle cx="624" cy="69.0" r="6" fill="#f0f6fc">
+      <animate attributeName="cy" values="69.0;127.0;185.0;243.0;301.0;359.0;417.0;359.0;301.0;243.0;185.0;127.0;69.0" keyTimes="0.0000;0.0833;0.1667;0.2500;0.3333;0.4167;0.5000;0.5833;0.6667;0.7500;0.8333;0.9167;1.0000" dur="8.4s" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1" repeatCount="indefinite"/>
+      <animate attributeName="fill" values="#d2a8ff;#79c0ff;#7ee787;#79c0ff;#d2a8ff" keyTimes="0;0.25;0.5;0.75;1" dur="8.4s" repeatCount="indefinite"/>
     </circle>
   </g>
 </svg>

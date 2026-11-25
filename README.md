@@ -1,4 +1,4 @@
-<img src="./assets/hero.svg" width="100%" alt="Muhammed Özdemir — Backend & Platform Engineer">
+<img src="./assets/hero.svg" width="100%" alt="Muhammed Özdemir — Backend, platform, yapay zekâ ve ağ. OSI yığınının yedi katmanında yaptığı işler: fiziksel kurulumdan ağa, oturumdan uygulamaya, RAG ve fine-tuning'e.">
 
 Backend ve platform mühendisiyim. Üç yıldır production'da çalışan sistemler
 geliştiriyorum: API tasarımı, veritabanı, dağıtım ve sunucu işletimi dahil
