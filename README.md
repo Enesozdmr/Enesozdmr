@@ -1,4 +1,6 @@
-# Merhaba, ben Muhammed 👋
+<img src="./assets/hero.svg" width="100%" alt="Muhammed Özdemir — Backend & Platform Engineer">
+
+### Merhaba, ben Muhammed 👋
 
 Ankara'da yaşayan bir backend ve platform mühendisiyim. Üç yıldır
 production'da çalışan sistemler geliştiriyorum: API tasarımı, veritabanı,
