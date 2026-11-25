@@ -22,12 +22,12 @@ jobs:
       - name: Görseli üret
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/skyline.py "${{ github.repository_owner }}" assets/skyline.svg
+        run: python3 scripts/skyline.py "${{ github.repository_owner }}" assets/katki-sehri.svg
 
       - name: Değiştiyse kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/skyline.svg
+          git add assets/katki-sehri.svg
           git diff --cached --quiet || git commit -m "chore: katkı silueti güncellendi"
           git push
