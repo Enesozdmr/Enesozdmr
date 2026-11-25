@@ -10,6 +10,8 @@ Yazılımın yanında veri merkezi ve sistem/ağ operasyonu geçmişim var;
 geliştirdiğim sistemlerin barındırma, ağ, yedekleme ve izleme tarafını da
 kendim kurup işletiyorum.
 
+<img src="./assets/skyline.svg" width="100%" alt="Son 12 ayın katkıları: her bina bir gün, yüksekliği o günkü katkı sayısı">
+
 ## Şu an
 
 **Pandassist**'te medikal distribütörler için stok, satış, satın alma ve
