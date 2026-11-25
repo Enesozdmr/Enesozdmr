@@ -69,7 +69,7 @@ Depolarımın çoğu gizli; merak ettiğin bir proje olursa yazabilirsin.
 
 ## Kullandıklarım
 
-**Diller:** TypeScript/Node.js, Python, C#/.NET, SQL, Bash<br>
+**Diller:** TypeScript/Node.js, Python, Rust, C#/.NET, SQL, Bash<br>
 **Backend:** Fastify, FastAPI, Django REST Framework, Express, OpenAPI<br>
 **Veri:** PostgreSQL (RLS, pgvector, TimescaleDB), MongoDB, Redis<br>
 **Altyapı:** Linux, Docker, GitHub Actions, GitLab CI/CD, Nginx<br>
