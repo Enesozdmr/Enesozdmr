@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" width="1200" height="540" role="img" aria-label="Bir yazma isteğinin yolculuğu: istek kimlik doğrulama ve hız sınırından, idempotency kontrolünden, RLS ile korunan veritabanı işleminden geçer; olay aynı işlemde outbox'a yazılır, worker dış sisteme iletir ve imzalı webhook gönderilir. Örnek akış.">
+<title>Bir yazma isteğinin yolculuğu</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1022"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
+<radialGradient id="isik" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#3b82f6" stop-opacity="0.2"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+<pattern id="nokta" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.05"/></pattern>
+<filter id="parla" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="cerceve"><rect width="1200" height="540" rx="18"/></clipPath>
+<clipPath id="y1"><rect x="64.0" y="96" height="22" width="0"><animate attributeName="width" dur="13s" repeatCount="indefinite" values="0;0;264.4;264.4;0" keyTimes="0;0.020;0.100;0.975;1"/></rect></clipPath><clipPath id="y2"><rect x="97.6" y="120" height="22" width="0"><animate attributeName="width" dur="13s" repeatCount="indefinite" values="0;0;264.4;264.4;0" keyTimes="0;0.110;0.190;0.975;1"/></rect></clipPath><clipPath id="y4"><rect x="64.0" y="192" height="22" width="0"><animate attributeName="width" dur="13s" repeatCount="indefinite" values="0;0;222.4;222.4;0" keyTimes="0;0.660;0.740;0.975;1"/></rect></clipPath>
+</defs>
+<g clip-path="url(#cerceve)">
+<rect width="1200" height="540" fill="url(#bg)"/>
+<ellipse cx="600" cy="440" rx="620" ry="220" fill="url(#isik)"/>
+<rect width="1200" height="540" fill="url(#nokta)"/>
+</g>
+<rect x="0.5" y="0.5" width="1199" height="539" rx="18" fill="none" stroke="#ffffff" stroke-opacity="0.09"/>
+
+<!-- Terminal -->
+<rect x="40" y="40" width="520" height="270" rx="12" fill="#0d1117" fill-opacity="0.85" stroke="#30363d"/>
+<circle cx="62" cy="62" r="5" fill="#ff7b72"/><circle cx="80" cy="62" r="5" fill="#e3b341"/><circle cx="98" cy="62" r="5" fill="#3fb950"/>
+<text x="300" y="67" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6e7681" text-anchor="middle">istek</text>
+<line x1="40" y1="82" x2="560" y2="82" stroke="#21262d"/>
+<g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14"><text x="64.0" y="112" fill="#c9d1d9" textLength="260.4" lengthAdjust="spacingAndGlyphs" clip-path="url(#y1)">$ curl -X POST /v1/siparisler \</text><text x="97.6" y="136" fill="#79c0ff" textLength="260.4" lengthAdjust="spacingAndGlyphs" clip-path="url(#y2)">-H "Idempotency-Key: 7f3a-c1e9"</text><g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.420;0.440;0.975;1"/><text x="64.0" y="164" fill="#7ee787" textLength="184.8" lengthAdjust="spacingAndGlyphs">&lt; 202 Accepted · 38 ms</text></g><text x="64.0" y="208" fill="#c9d1d9" textLength="218.4" lengthAdjust="spacingAndGlyphs" clip-path="url(#y4)">$ curl /v1/siparisler/8421</text><g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.790;0.810;0.975;1"/><text x="64.0" y="236" fill="#7ee787" textLength="252.0" lengthAdjust="spacingAndGlyphs">&lt; 200 OK · durum: "tamamlandı"</text></g></g>
+
+<!-- Günlük -->
+<rect x="580" y="40" width="580" height="270" rx="12" fill="#0d1117" fill-opacity="0.85" stroke="#30363d"/>
+<text x="604" y="67" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6e7681">denetim günlüğü</text>
+<text x="1136" y="67" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#484f58" text-anchor="end">örnek akış</text>
+<line x1="580" y1="82" x2="1160" y2="82" stroke="#21262d"/>
+<g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="14"><g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.220;0.240;0.975;1"/><text x="604.0" y="112" fill="#6e7681" textLength="100.8" lengthAdjust="spacingAndGlyphs">12:04:07.112</text><text x="721.6" y="112" fill="#58a6ff" textLength="33.6" lengthAdjust="spacingAndGlyphs">auth</text><text x="797.2" y="112" fill="#c9d1d9" textLength="168.0" lengthAdjust="spacingAndGlyphs">kiracı=acme rol=depo</text></g><g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.280;0.300;0.975;1"/><text x="604.0" y="139" fill="#6e7681" textLength="100.8" lengthAdjust="spacingAndGlyphs">12:04:07.118</text><text x="721.6" y="139" fill="#4fbfd8" textLength="33.6" lengthAdjust="spacingAndGlyphs">idem</text><text x="797.2" y="139" fill="#c9d1d9" textLength="201.6" lengthAdjust="spacingAndGlyphs">anahtar yeni, kaydedildi</text></g><g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.340;0.360;0.975;1"/><text x="604.0" y="166" fill="#6e7681" textLength="100.8" lengthAdjust="spacingAndGlyphs">12:04:07.141</text><text x="721.6" y="166" fill="#39d3bb" textLength="16.8" lengthAdjust="spacingAndGlyphs">db</text><text x="797.2" y="166" fill="#c9d1d9" textLength="226.8" lengthAdjust="spacingAndGlyphs">tx commit · 3 satır · 23 ms</text></g><g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.400;0.420;0.975;1"/><text x="604.0" y="193" fill="#6e7681" textLength="100.8" lengthAdjust="spacingAndGlyphs">12:04:07.142</text><text x="721.6" y="193" fill="#7ee787" textLength="50.4" lengthAdjust="spacingAndGlyphs">outbox</text><text x="797.2" y="193" fill="#c9d1d9" textLength="201.6" lengthAdjust="spacingAndGlyphs">olay=siparis.olusturuldu</text></g><g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.500;0.520;0.975;1"/><text x="604.0" y="220" fill="#6e7681" textLength="100.8" lengthAdjust="spacingAndGlyphs">12:04:07.390</text><text x="721.6" y="220" fill="#e3b341" textLength="50.4" lengthAdjust="spacingAndGlyphs">worker</text><text x="797.2" y="220" fill="#c9d1d9" textLength="218.4" lengthAdjust="spacingAndGlyphs">ERP'ye iletildi · deneme 1</text></g><g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.600;0.620;0.975;1"/><text x="604.0" y="247" fill="#6e7681" textLength="100.8" lengthAdjust="spacingAndGlyphs">12:04:07.512</text><text x="721.6" y="247" fill="#d2a8ff" textLength="58.8" lengthAdjust="spacingAndGlyphs">webhook</text><text x="797.2" y="247" fill="#c9d1d9" textLength="176.4" lengthAdjust="spacingAndGlyphs">200 · imza doğrulandı</text></g></g>
+
+<!-- Aşamalar -->
+<line x1="120.0" y1="372" x2="1080.0" y2="372" stroke="#30363d" stroke-width="1.5"/>
+
+<line x1="120.0" y1="372" x2="120.0" y2="396" stroke="#30363d" stroke-width="1.5"/>
+<rect x="35.0" y="396" width="170" height="104" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.220;0.240;0.975;1"/>
+<line x1="120.0" y1="372" x2="120.0" y2="396" stroke="#58a6ff" stroke-width="1.5"/>
+<rect x="35.0" y="396" width="170" height="104" rx="12" fill="#58a6ff" fill-opacity="0.10" stroke="#58a6ff" stroke-width="1.5"/>
+<circle cx="120.0" cy="372" r="6" fill="#58a6ff"/>
+</g>
+<circle cx="120.0" cy="372" r="6" fill="none" stroke="#484f58" stroke-width="1.5"/>
+<text x="120.0" y="434" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc" text-anchor="middle">Kimlik</text>
+<text x="120.0" y="460" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">JWT · kiracı · hız sınırı</text>
+<text x="120.0" y="484" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6e7681" text-anchor="middle">1 / 6</text>
+<line x1="312.0" y1="372" x2="312.0" y2="396" stroke="#30363d" stroke-width="1.5"/>
+<rect x="227.0" y="396" width="170" height="104" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.280;0.300;0.975;1"/>
+<line x1="312.0" y1="372" x2="312.0" y2="396" stroke="#4fbfd8" stroke-width="1.5"/>
+<rect x="227.0" y="396" width="170" height="104" rx="12" fill="#4fbfd8" fill-opacity="0.10" stroke="#4fbfd8" stroke-width="1.5"/>
+<circle cx="312.0" cy="372" r="6" fill="#4fbfd8"/>
+</g>
+<circle cx="312.0" cy="372" r="6" fill="none" stroke="#484f58" stroke-width="1.5"/>
+<text x="312.0" y="434" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc" text-anchor="middle">Idempotency</text>
+<text x="312.0" y="460" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">aynı istek, tek kayıt</text>
+<text x="312.0" y="484" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6e7681" text-anchor="middle">2 / 6</text>
+<line x1="504.0" y1="372" x2="504.0" y2="396" stroke="#30363d" stroke-width="1.5"/>
+<rect x="419.0" y="396" width="170" height="104" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.340;0.360;0.975;1"/>
+<line x1="504.0" y1="372" x2="504.0" y2="396" stroke="#39d3bb" stroke-width="1.5"/>
+<rect x="419.0" y="396" width="170" height="104" rx="12" fill="#39d3bb" fill-opacity="0.10" stroke="#39d3bb" stroke-width="1.5"/>
+<circle cx="504.0" cy="372" r="6" fill="#39d3bb"/>
+</g>
+<circle cx="504.0" cy="372" r="6" fill="none" stroke="#484f58" stroke-width="1.5"/>
+<text x="504.0" y="434" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc" text-anchor="middle">Transaction</text>
+<text x="504.0" y="460" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">RLS: yetki veritabanında</text>
+<text x="504.0" y="484" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6e7681" text-anchor="middle">3 / 6</text>
+<line x1="696.0" y1="372" x2="696.0" y2="396" stroke="#30363d" stroke-width="1.5"/>
+<rect x="611.0" y="396" width="170" height="104" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.400;0.420;0.975;1"/>
+<line x1="696.0" y1="372" x2="696.0" y2="396" stroke="#7ee787" stroke-width="1.5"/>
+<rect x="611.0" y="396" width="170" height="104" rx="12" fill="#7ee787" fill-opacity="0.10" stroke="#7ee787" stroke-width="1.5"/>
+<circle cx="696.0" cy="372" r="6" fill="#7ee787"/>
+</g>
+<circle cx="696.0" cy="372" r="6" fill="none" stroke="#484f58" stroke-width="1.5"/>
+<text x="696.0" y="434" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc" text-anchor="middle">Outbox</text>
+<text x="696.0" y="460" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">veriyle aynı commit'te</text>
+<text x="696.0" y="484" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6e7681" text-anchor="middle">4 / 6</text>
+<line x1="888.0" y1="372" x2="888.0" y2="396" stroke="#30363d" stroke-width="1.5"/>
+<rect x="803.0" y="396" width="170" height="104" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.500;0.520;0.975;1"/>
+<line x1="888.0" y1="372" x2="888.0" y2="396" stroke="#e3b341" stroke-width="1.5"/>
+<rect x="803.0" y="396" width="170" height="104" rx="12" fill="#e3b341" fill-opacity="0.10" stroke="#e3b341" stroke-width="1.5"/>
+<circle cx="888.0" cy="372" r="6" fill="#e3b341"/>
+</g>
+<circle cx="888.0" cy="372" r="6" fill="none" stroke="#484f58" stroke-width="1.5"/>
+<text x="888.0" y="434" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc" text-anchor="middle">Worker</text>
+<text x="888.0" y="460" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">kuyruk · tekrar dener</text>
+<text x="888.0" y="484" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6e7681" text-anchor="middle">5 / 6</text>
+<line x1="1080.0" y1="372" x2="1080.0" y2="396" stroke="#30363d" stroke-width="1.5"/>
+<rect x="995.0" y="396" width="170" height="104" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<g opacity="0"><animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.600;0.620;0.975;1"/>
+<line x1="1080.0" y1="372" x2="1080.0" y2="396" stroke="#d2a8ff" stroke-width="1.5"/>
+<rect x="995.0" y="396" width="170" height="104" rx="12" fill="#d2a8ff" fill-opacity="0.10" stroke="#d2a8ff" stroke-width="1.5"/>
+<circle cx="1080.0" cy="372" r="6" fill="#d2a8ff"/>
+</g>
+<circle cx="1080.0" cy="372" r="6" fill="none" stroke="#484f58" stroke-width="1.5"/>
+<text x="1080.0" y="434" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc" text-anchor="middle">Webhook</text>
+<text x="1080.0" y="460" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13.5" fill="#8b949e" text-anchor="middle">imzalı · en az bir kez</text>
+<text x="1080.0" y="484" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6e7681" text-anchor="middle">6 / 6</text>
+<circle r="5" fill="#f0f6fc" opacity="0" filter="url(#parla)">
+<animateMotion dur="13s" repeatCount="indefinite" path="M120.0 372 H1080.0" calcMode="linear" keyPoints="0;0;0.2;0.4;0.6;0.8;1.0;1" keyTimes="0;0.220;0.280;0.340;0.400;0.500;0.600;1"/>
+<animate attributeName="opacity" dur="13s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.2;0.22;0.6;0.63;1"/>
+</circle>
+</svg>

@@ -1,16 +1,34 @@
 <img src="./assets/hero.svg" width="100%" alt="Muhammed Özdemir — Backend & Platform Engineer">
 
-### Merhaba, ben Muhammed 👋
-
-Ankara'da yaşayan bir backend ve platform mühendisiyim. Üç yıldır
-production'da çalışan sistemler geliştiriyorum: API tasarımı, veritabanı,
-dağıtım ve sunucu işletimi dahil işin tamamıyla ilgileniyorum.
-
-Yazılımın yanında veri merkezi ve sistem/ağ operasyonu geçmişim var;
-geliştirdiğim sistemlerin barındırma, ağ, yedekleme ve izleme tarafını da
+Backend ve platform mühendisiyim. Üç yıldır production'da çalışan sistemler
+geliştiriyorum: API tasarımı, veritabanı, dağıtım ve sunucu işletimi dahil
+işin tamamını üstleniyorum. Veri merkezi ve sistem/ağ operasyonu geçmişim
+sayesinde yazdığım sistemin barındırmasını, ağını, yedeğini ve izlemesini de
 kendim kurup işletiyorum.
 
 <img src="./assets/metrics.svg" width="100%" alt="Öne çıkan sonuçlar: 430+ REST endpoint, 375 kat hızlanan sorgu, 5.000+ otomatik test, 7 dilde 6 production sitesi">
+
+## Bir yazma isteğinin yolculuğu
+
+Yazma uçlarını nasıl kurduğumun kısa hali. İstek ağda tekrarlanabilir, dış
+sistem çökebilir, uygulama katmanında hata olabilir; hiçbiri veriyi bozmamalı.
+
+<img src="./assets/akis.svg" width="100%" alt="Bir yazma isteğinin yolculuğu: kimlik ve hız sınırı, idempotency, RLS ile korunan transaction, outbox, worker ve imzalı webhook">
+
+## Nasıl çalışırım
+
+- **Yetki veritabanında zorlanır.** Uygulama kodundaki bir hata başka kiracının
+  verisini açmamalı; erişim kuralı PostgreSQL RLS'te durur.
+- **Her yazma ucu idempotent.** İstemci aynı isteği iki kez gönderdiğinde ikinci
+  kayıt oluşmaz.
+- **Dış sistem çökünce akış durmaz.** Olay veriyle aynı transaction'da outbox'a
+  yazılır; worker kuyruktan alır, başarısız olursa geri çekilerek yeniden dener.
+- **Önce ölçerim, sonra hızlandırırım.** Tahminle değil sorgu planıyla; 1,5 sn
+  süren bir sorgunun 4 ms'ye inmesi tek bir doğru indeksti.
+- **Geri dönüşü denenmemiş dağıtım yapmam.** Yedekten dönüş ve önceki sürüme
+  dönüş, canlıya çıkmadan önce provası yapılmış adımlardır.
+- **Test, işin parçası.** Her değişiklik CI'da birim ve entegrasyon
+  testlerinden geçer; geçmeyen birleşmez.
 
 ## Şu an
 
