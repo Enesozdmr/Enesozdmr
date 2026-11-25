@@ -22,7 +22,6 @@ jobs:
       - name: Görseli üret
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLAB_USER: ${{ vars.GITLAB_USER }}
         run: python3 scripts/skyline.py "${{ github.repository_owner }}" assets/skyline.svg
 
       - name: Değiştiyse kaydet

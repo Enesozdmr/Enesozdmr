@@ -4,10 +4,11 @@
 Kullanım:
     GITHUB_TOKEN=... python3 scripts/skyline.py <github-kullanıcı> <çıktı.svg>
 
-İsteğe bağlı: GITLAB_USER ortam değişkeni verilirse o kullanıcının gitlab.com
-üzerindeki herkese açık katkı takvimi de gün gün toplanır. Yalnızca standart
-kütüphane kullanır.
+data/ klasöründeki *.json dosyaları ({"YYYY-AA-GG": sayı} biçiminde, örneğin
+GitLab katkı takviminin dökümü) gün gün GitHub verisine eklenir. Yalnızca
+standart kütüphane kullanır.
 """
+import glob
 import json
 import math
 import os
@@ -41,13 +42,14 @@ def github_takvimi(kullanici, token):
     return [[(g["date"], g["contributionCount"]) for g in h["contributionDays"]] for h in haftalar]
 
 
-def gitlab_takvimi(kullanici):
-    istek = urllib.request.Request(
-        "https://gitlab.com/users/%s/calendar.json" % kullanici,
-        headers={"User-Agent": "Mozilla/5.0 (skyline)"},
-    )
-    with urllib.request.urlopen(istek, timeout=30) as yanit:
-        return {k: int(v) for k, v in json.load(yanit).items()}
+def ek_veriler(klasor="data"):
+    """data/*.json içindeki günlük sayıları tek sözlükte toplar."""
+    toplam = {}
+    for yol in sorted(glob.glob(os.path.join(klasor, "*.json"))):
+        with open(yol, encoding="utf-8") as f:
+            for tarih, sayi in json.load(f).items():
+                toplam[tarih] = toplam.get(tarih, 0) + int(sayi)
+    return toplam
 
 
 def renk(t):
@@ -165,6 +167,7 @@ def uret(haftalar):
 <text x="1136" y="70" font-family="{MONO}" font-size="14" letter-spacing="2" fill="#7ee787">SON 12 AY</text>
 <text x="1136" y="140" font-family="{SANS}" font-size="72" font-weight="800" letter-spacing="-2" fill="url(#sayi)">{toplam_s}</text>
 <text x="1136" y="170" font-family="{MONO}" font-size="16" fill="#c9d1d9">katkı</text>
+<text x="1136" y="192" font-family="{MONO}" font-size="12" fill="#6e7681">GitHub + GitLab</text>
 </g>
 <g font-family="{MONO}" font-size="14" fill="#8b949e">
 <text x="64" y="430">en yoğun gün <tspan fill="#f0f6fc" font-weight="700">{zirve}</tspan> · {en_cok} katkı</text>
@@ -183,11 +186,8 @@ def main():
     if not token:
         raise SystemExit("GITHUB_TOKEN gerekli")
     haftalar = github_takvimi(kullanici, token)
-    gitlab = os.environ.get("GITLAB_USER")
-    if gitlab:
-        # Hata olursa çık: yarım veriyle eski görselin üzerine yazma.
-        ek = gitlab_takvimi(gitlab)
-        haftalar = [[(t, c + ek.get(t, 0)) for t, c in h] for h in haftalar]
+    ek = ek_veriler()
+    haftalar = [[(t, c + ek.get(t, 0)) for t, c in h] for h in haftalar]
     svg = uret(haftalar)
     os.makedirs(os.path.dirname(cikti) or ".", exist_ok=True)
     with open(cikti, "w", encoding="utf-8", newline="\n") as f:
